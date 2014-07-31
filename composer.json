@@ -1,12 +1,12 @@
 {
-    "name": "aoloe/php-template",
+    "name": "aoloe/php-debug",
     "type": "library",
-    "description": "simplest php based template engine",
+    "description": "simple method to output debug values to the browser or the browser console",
     "keywords": [
         "php",
-        "template"
+        "debug"
     ],
-    "homepage": "https://github.com/aoloe/php-template",
+    "homepage": "https://github.com/aoloe/php-debug",
     "license": "MIT",
     "authors": [
         {
