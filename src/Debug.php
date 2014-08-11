@@ -3,6 +3,9 @@
 // dummy class for the autoloader
 namespace Aoloe {
     class Debug {
+        public static function show($label, $value = null ) {
+            Aoloe\debug($label, $value);
+        }
     }
 }
 
