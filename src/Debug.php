@@ -1,18 +1,17 @@
 <?php
 
-// dummy class for the autoloader
-namespace Aoloe {
-    class Debug {
-        public static function show($label, $value = null ) {
-            Aoloe\debug($label, $value);
-        }
+namespace Aoloe;
+
+class Debug {
+    public static function show($label, $value = null ) {
+        Aoloe\debug($label, $value);
     }
 }
 
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-if (is_null($debug_log)) {
+if (!isset($debug_log)) {
     $debug_log = false;
 }
 
@@ -41,4 +40,3 @@ function debug($label, $value = null) {
             echo("<pre>$label:\n".htmlentities($value)."</pre>");
     }
 }
-
