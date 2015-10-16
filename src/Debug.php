@@ -26,6 +26,8 @@ function debug($label, $value = null) {
                 $value = "<null>";
             } elseif ($value === false) {
                 $value = "<false>";
+            } elseif ($value === true) {
+                $value = "<true>";
             }
             echo("<script>console.log('$label: ".$value."');</script>");
         }
